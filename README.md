@@ -288,90 +288,320 @@ The skill is compatible with:
 
 ---
 
-### One-Line Install
+## macOS
 
-Example:
+### One-Line Installation (Recommended)
+
+Install Daily Research Digest across all supported agents:
 
 ```bash
-curl -sSL https://skillhub.club/install/daily-research-digest | bash
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agents=claude,codex,gemini,opencode,openclaw,copilot,cursor,windsurf,cline,roo,kiro,junie,augment,warp,goose&format=sh" | bash
 ```
 
 ---
 
-### Manual Installation
-
-Create a skill directory inside your agent configuration folder and copy the contents of `SKILL.md`.
-
-#### Claude Code
+### Full Installation Script
 
 ```bash
-mkdir -p ~/.claude/skills/daily-research-digest
-cp SKILL.md ~/.claude/skills/daily-research-digest/
+#!/bin/bash
+# SkillHub Installer - daily-research-digest
+# Platform: macOS
+
+set -e
+
+# Install to Claude Code
+mkdir -p "$HOME/.claude/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=claude&format=raw" > "$HOME/.claude/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Claude Code: $HOME/.claude/skills/enisgayretli-daily-research-digest"
+
+# Install to Codex CLI
+mkdir -p "$HOME/.codex/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=codex&format=raw" > "$HOME/.codex/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Codex CLI: $HOME/.codex/skills/enisgayretli-daily-research-digest"
+
+# Install to Gemini CLI
+mkdir -p "$HOME/.gemini/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=gemini&format=raw" > "$HOME/.gemini/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Gemini CLI: $HOME/.gemini/skills/enisgayretli-daily-research-digest"
+
+# Install to OpenCode
+mkdir -p "$HOME/.opencode/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=opencode&format=raw" > "$HOME/.opencode/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to OpenCode: $HOME/.opencode/skills/enisgayretli-daily-research-digest"
+
+# Install to OpenClaw
+mkdir -p "$HOME/.openclaw/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=openclaw&format=raw" > "$HOME/.openclaw/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to OpenClaw: $HOME/.openclaw/skills/enisgayretli-daily-research-digest"
+
+# Install to GitHub Copilot
+mkdir -p "$HOME/.copilot/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=copilot&format=raw" > "$HOME/.copilot/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to GitHub Copilot: $HOME/.copilot/skills/enisgayretli-daily-research-digest"
+
+# Install to Cursor
+mkdir -p "$HOME/.cursor/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=cursor&format=raw" > "$HOME/.cursor/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Cursor: $HOME/.cursor/skills/enisgayretli-daily-research-digest"
+
+# Install to Windsurf
+mkdir -p "$HOME/.codeium/windsurf/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=windsurf&format=raw" > "$HOME/.codeium/windsurf/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Windsurf: $HOME/.codeium/windsurf/skills/enisgayretli-daily-research-digest"
+
+# Install to Cline
+mkdir -p "$HOME/.cline/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=cline&format=raw" > "$HOME/.cline/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Cline: $HOME/.cline/skills/enisgayretli-daily-research-digest"
+
+# Install to Roo Code
+mkdir -p "$HOME/.roo/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=roo&format=raw" > "$HOME/.roo/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Roo Code: $HOME/.roo/skills/enisgayretli-daily-research-digest"
+
+# Install to Kiro
+mkdir -p "$HOME/.kiro/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=kiro&format=raw" > "$HOME/.kiro/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Kiro: $HOME/.kiro/skills/enisgayretli-daily-research-digest"
+
+# Install to Junie
+mkdir -p "$HOME/.junie/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=junie&format=raw" > "$HOME/.junie/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Junie: $HOME/.junie/skills/enisgayretli-daily-research-digest"
+
+# Install to Augment Code
+mkdir -p "$HOME/.augment/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=augment&format=raw" > "$HOME/.augment/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Augment Code: $HOME/.augment/skills/enisgayretli-daily-research-digest"
+
+# Install to Warp
+mkdir -p "$HOME/.warp/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=warp&format=raw" > "$HOME/.warp/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Warp: $HOME/.warp/skills/enisgayretli-daily-research-digest"
+
+# Install to Goose
+mkdir -p "$HOME/.config/goose/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=goose&format=raw" > "$HOME/.config/goose/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Goose: $HOME/.config/goose/skills/enisgayretli-daily-research-digest"
+
+echo ""
+echo "Done! Restart your agent to activate the skill."
 ```
-
-#### Codex CLI
-
-```bash
-mkdir -p ~/.codex/skills/daily-research-digest
-cp SKILL.md ~/.codex/skills/daily-research-digest/
-```
-
-#### Gemini CLI
-
-```bash
-mkdir -p ~/.gemini/skills/daily-research-digest
-cp SKILL.md ~/.gemini/skills/daily-research-digest/
-```
-
-#### Cursor
-
-```bash
-mkdir -p ~/.cursor/skills/daily-research-digest
-cp SKILL.md ~/.cursor/skills/daily-research-digest/
-```
-
-#### Windsurf
-
-```bash
-mkdir -p ~/.codeium/windsurf/skills/daily-research-digest
-cp SKILL.md ~/.codeium/windsurf/skills/daily-research-digest/
-```
-
-#### Cline
-
-```bash
-mkdir -p ~/.cline/skills/daily-research-digest
-cp SKILL.md ~/.cline/skills/daily-research-digest/
-```
-
-#### Roo Code
-
-```bash
-mkdir -p ~/.roo/skills/daily-research-digest
-cp SKILL.md ~/.roo/skills/daily-research-digest/
-```
-
-#### Hermes
-
-```bash
-mkdir -p ~/.hermes/skills/daily-research-digest
-cp SKILL.md ~/.hermes/skills/daily-research-digest/
-```
-
-Restart your agent after installation.
 
 ---
 
-### SkillHub Installer Script
+## Windows
 
-If using SkillHub's generated installer:
+### One-Line Installation (Recommended)
 
-```bash
-chmod +x install.sh
-./install.sh
+Install Daily Research Digest across all supported agents:
+
+```powershell
+irm "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agents=claude,codex,gemini,opencode,openclaw,copilot,cursor,windsurf,cline,roo,kiro,junie,augment,warp,goose&format=ps1" | iex
 ```
 
-The installer automatically installs the skill into all supported agent directories available on your system.
+---
+
+### Full Installation Script
+
+```powershell
+# SkillHub Installer - daily-research-digest
+# Platform: Windows (PowerShell)
+
+# Install to Claude Code
+$skillDir = "$env:USERPROFILE\.claude\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=claude&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Claude Code: $skillDir" -ForegroundColor Green
+
+# Install to Codex CLI
+$skillDir = "$env:USERPROFILE\.codex\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=codex&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Codex CLI: $skillDir" -ForegroundColor Green
+
+# Install to Gemini CLI
+$skillDir = "$env:USERPROFILE\.gemini\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=gemini&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Gemini CLI: $skillDir" -ForegroundColor Green
+
+# Install to OpenCode
+$skillDir = "$env:USERPROFILE\.opencode\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=opencode&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to OpenCode: $skillDir" -ForegroundColor Green
+
+# Install to OpenClaw
+$skillDir = "$env:USERPROFILE\.openclaw\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=openclaw&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to OpenClaw: $skillDir" -ForegroundColor Green
+
+# Install to GitHub Copilot
+$skillDir = "$env:USERPROFILE\.copilot\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=copilot&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to GitHub Copilot: $skillDir" -ForegroundColor Green
+
+# Install to Cursor
+$skillDir = "$env:USERPROFILE\.cursor\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=cursor&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Cursor: $skillDir" -ForegroundColor Green
+
+# Install to Windsurf
+$skillDir = "$env:USERPROFILE\.codeium\windsurf\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=windsurf&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Windsurf: $skillDir" -ForegroundColor Green
+
+# Install to Cline
+$skillDir = "$env:USERPROFILE\.cline\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=cline&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Cline: $skillDir" -ForegroundColor Green
+
+# Install to Roo Code
+$skillDir = "$env:USERPROFILE\.roo\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=roo&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Roo Code: $skillDir" -ForegroundColor Green
+
+# Install to Kiro
+$skillDir = "$env:USERPROFILE\.kiro\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=kiro&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Kiro: $skillDir" -ForegroundColor Green
+
+# Install to Junie
+$skillDir = "$env:USERPROFILE\.junie\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=junie&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Junie: $skillDir" -ForegroundColor Green
+
+# Install to Augment Code
+$skillDir = "$env:USERPROFILE\.augment\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=augment&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Augment Code: $skillDir" -ForegroundColor Green
+
+# Install to Warp
+$skillDir = "$env:USERPROFILE\.warp\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=warp&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Warp: $skillDir" -ForegroundColor Green
+
+# Install to Goose
+$skillDir = "$env:USERPROFILE\.config\goose\skills\enisgayretli-daily-research-digest"
+New-Item -ItemType Directory -Force -Path $skillDir | Out-Null
+Invoke-WebRequest -Uri "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=goose&format=raw" -OutFile "$skillDir\SKILL.md"
+Write-Host "Installed to Goose: $skillDir" -ForegroundColor Green
+
+Write-Host "Done! Restart your agent to activate the skill." -ForegroundColor Cyan
+```
+
+---
+
+## Linux
+
+### One-Line Installation (Recommended)
+
+Install Daily Research Digest across all supported agents:
+
+```bash
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agents=claude,codex,gemini,opencode,openclaw,copilot,cursor,windsurf,cline,roo,kiro,junie,augment,warp,goose&format=sh" | bash
+```
+
+---
+
+### Full Installation Script
+
+```bash
+#!/bin/bash
+# SkillHub Installer - daily-research-digest
+# Platform: Linux
+
+set -e
+
+# Install to Claude Code
+mkdir -p "$HOME/.claude/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=claude&format=raw" > "$HOME/.claude/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Claude Code: $HOME/.claude/skills/enisgayretli-daily-research-digest"
+
+# Install to Codex CLI
+mkdir -p "$HOME/.codex/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=codex&format=raw" > "$HOME/.codex/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Codex CLI: $HOME/.codex/skills/enisgayretli-daily-research-digest"
+
+# Install to Gemini CLI
+mkdir -p "$HOME/.gemini/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=gemini&format=raw" > "$HOME/.gemini/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Gemini CLI: $HOME/.gemini/skills/enisgayretli-daily-research-digest"
+
+# Install to OpenCode
+mkdir -p "$HOME/.opencode/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=opencode&format=raw" > "$HOME/.opencode/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to OpenCode: $HOME/.opencode/skills/enisgayretli-daily-research-digest"
+
+# Install to OpenClaw
+mkdir -p "$HOME/.openclaw/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=openclaw&format=raw" > "$HOME/.openclaw/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to OpenClaw: $HOME/.openclaw/skills/enisgayretli-daily-research-digest"
+
+# Install to GitHub Copilot
+mkdir -p "$HOME/.copilot/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=copilot&format=raw" > "$HOME/.copilot/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to GitHub Copilot: $HOME/.copilot/skills/enisgayretli-daily-research-digest"
+
+# Install to Cursor
+mkdir -p "$HOME/.cursor/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=cursor&format=raw" > "$HOME/.cursor/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Cursor: $HOME/.cursor/skills/enisgayretli-daily-research-digest"
+
+# Install to Windsurf
+mkdir -p "$HOME/.codeium/windsurf/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=windsurf&format=raw" > "$HOME/.codeium/windsurf/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Windsurf: $HOME/.codeium/windsurf/skills/enisgayretli-daily-research-digest"
+
+# Install to Cline
+mkdir -p "$HOME/.cline/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=cline&format=raw" > "$HOME/.cline/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Cline: $HOME/.cline/skills/enisgayretli-daily-research-digest"
+
+# Install to Roo Code
+mkdir -p "$HOME/.roo/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=roo&format=raw" > "$HOME/.roo/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Roo Code: $HOME/.roo/skills/enisgayretli-daily-research-digest"
+
+# Install to Kiro
+mkdir -p "$HOME/.kiro/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=kiro&format=raw" > "$HOME/.kiro/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Kiro: $HOME/.kiro/skills/enisgayretli-daily-research-digest"
+
+# Install to Junie
+mkdir -p "$HOME/.junie/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=junie&format=raw" > "$HOME/.junie/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Junie: $HOME/.junie/skills/enisgayretli-daily-research-digest"
+
+# Install to Augment Code
+mkdir -p "$HOME/.augment/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=augment&format=raw" > "$HOME/.augment/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Augment Code: $HOME/.augment/skills/enisgayretli-daily-research-digest"
+
+# Install to Warp
+mkdir -p "$HOME/.warp/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=warp&format=raw" > "$HOME/.warp/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Warp: $HOME/.warp/skills/enisgayretli-daily-research-digest"
+
+# Install to Goose
+mkdir -p "$HOME/.config/goose/skills/enisgayretli-daily-research-digest"
+curl -sL "https://www.skillhub.club/api/v1/skills/enisgayretli-daily-research-digest/install?agent=goose&format=raw" > "$HOME/.config/goose/skills/enisgayretli-daily-research-digest/SKILL.md"
+echo "✓ Installed to Goose: $HOME/.config/goose/skills/enisgayretli-daily-research-digest"
+
+echo ""
+echo "Done! Restart your agent to activate the skill."
+```
 
 ---
 
